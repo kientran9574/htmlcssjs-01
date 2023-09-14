@@ -144,7 +144,25 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 70px;
+}
+.clients .images a {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0 42px;
+    border-radius: 12px;
+}
+.clients .images a:nth-child(3){
+    padding: 0px;
+    height: 80px;
+    border-radius: none;        
+}
+.clients .images a:hover:nth-child(3){
+    box-shadow: none;
+}
+.clients .images a:hover{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* guidance */
