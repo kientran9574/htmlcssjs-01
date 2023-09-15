@@ -38,60 +38,63 @@ a {
 }
 
 /* header */
-.header {
+.fixed-header{
+    display: flex;
+    padding-top: 26px;
+    background: #E6F0FF;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+.fixed-header .menu {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+.fixed-header .menu .list{
+    display: flex;
+    margin-left: 50px;
+}
+.fixed-header .menu .login-header {
+    margin-left: auto;
+}
+.fixed-header .list .item .link {
+    padding: 8px 14px;
+    color: #4F5361;
+    font-size: 1.4rem;
+    font-weight: 500; 
+}
+.fixed-header .menu .login-header a:first-child {
+    color: #0F1B4C;
+    font-size: 1.4rem;
+    font-weight: 500;
+ } 
+.fixed-header .login-btn {
+    margin-left: 18px;
+    padding: 13px 16px;
+}
+/* ======= header============= */
+
+.hero-wrap {
     background: #E6F0FF;
     height: 100vh;
     padding: 46px 0px;
     position: relative;
 }
 
-.header .menu {
-    display: flex;
-    align-items: center;
-
-}
-
-.header .menu .list {
-    display: flex;
-    margin-left: 50px;
-}
-
-.header .list .item .link {
-    padding: 8px 14px;
-    color: #4F5361;
-    font-size: 1.4rem;
-    font-weight: 500;
-
-}
-
-.header .menu .login-header {
-    margin-left: auto;
-}
-
-.header .menu .login-header a:first-child {
-    color: #0F1B4C;
-    font-size: 1.4rem;
-    font-weight: 500;
-}
-
-.login-btn {
-    margin-left: 18px;
-    padding: 13px 16px;
-}
-
-.header .heading {
+.hero-wrap .heading {
     width: 51%;
     margin-top: 130px;
 }
 
-.header .heading .desc {
+.hero-wrap .heading .desc {
     color: #687690;
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 0.18px;
 }
 
-.header .heading .title {
+.hero-wrap .heading .title {
     color: #000336;
     font-size: 6.4rem;
     font-weight: 700;
@@ -100,7 +103,7 @@ a {
     margin-top: 8px;
 }
 
-.header .heading .desc-long {
+.hero-wrap .heading .desc-long {
     color: #5A6473;
     font-size: 1.8rem;
     font-weight: 400;
@@ -109,7 +112,7 @@ a {
     margin-top: 30px;
 }
 
-.header .heading .btn-heading {
+.hero-wrap .heading .btn-heading {
     min-width: 170px;
     margin-top: 40px;
 }
